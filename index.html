@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Mi Portafolio - DeveloperXPK</title>
+
+    <style>
+        .titulo {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<!--
+    Para lograr un diseño responsivo, debemos incluir la clase "container" en el body.
+    asi logramos que el contenido se ajuste al tamaño de la pantalla.
+    bg-dark: Fondo oscuro
+    text-white: Texto blanco
+-->
+
+<body class="container bg-dark text-white">
+
+    <!-- 
+        La barra de navegación se mantiene fija en la parte superior de la pantalla.
+        bg-primary: Fondo azul
+        p-2: Padding de 2
+        navbar-expand-lg: Barra de navegación que se expande en pantallas grandes
+        navbar-light: Barra de navegación con fondo claro
+    -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary p-2">
+            <!--
+                Título de la barra de navegación
+                href="#Me": Enlace a la sección "Me"
+            -->
+            <a class="navbar-brand" href="#Me">DeveloperXPK</a>
+
+            <!--
+                Botón para mostrar el menú en pantallas pequeñas
+                data-toggle="collapse: Indica que el botón es un controlador de un elemento colapsable
+                data-target: Indica el id del elemento que se va a colapsar
+                aria-controls: Indica el id del elemento que se va a colapsar
+                aria-expanded: Indica si el elemento está expandido o no
+                aria-label: Etiqueta para el botón
+            -->
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                <!--
+                    Icono del botón
+                    span: Elemento en línea
+                    navbar-toggler-icon: Icono del botón
+                -->
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!--
+                Elementos del menú
+                ml-auto: Margen a la izquierda automático
+                id="navbarNav": Id del elemento que se va a colapsar
+            -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <!--
+                    Elementos de la barra de navegación
+                    navbar-nav: Elementos de la barra de navegación
+                    ml-auto: Margen a la izquierda automático
+
+                    Tenemos 4 elementos: Inicio, Proyectos, Conocimientos y Contacto
+                    nav-item: Elemento de la barra de navegación
+                    nav-link: Enlace de la barra de navegación
+                    text-white: Texto blanco
+                -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#Proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#Conocimientos">Conocimientos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#Contacto">Contacto</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- 
+        Clase "row" para crear una fila
+        Dentro de la fila, tenemos dos columnas:
+        - Imagen de perfil
+        - Información personal
+    -->
+    <div class="row">
+
+        <!-- 
+            col-lg-6: para crear una columna de 6 espacios en pantallas grandes
+            p-3: para agregar un padding de 3
+            text-center: para centrar el contenido
+        -->
+
+        <div class="col-lg-6 p-3 text-center">
+
+            <!-- 
+                Imagen de perfil
+                img-fluid: Imagen que se ajusta al tamaño del contenedor
+                rounded: Bordes redondeados
+
+                Para centrar la imagen:
+                mx-auto: Margen automático a los lados
+                d-block: Elemento en bloque
+            -->
+            <img src="img/profile.jpg" alt="Imagen de Andrés Giraldo, Developer" class="img-fluid rounded" width="300"
+                style="margin: 20px 0;">
+        </div>
+
+        <!-- 
+            col-lg-6: para crear una columna de 6 espacios en pantallas grandes
+            p-5: para agregar un padding de 5
+        -->
+        <div class="col-lg-6 p-5">
+
+            <!-- 
+                Título principal
+                text-primary: Texto de color azul
+            -->
+            <h1 class="text-primary">Andrés Giraldo </h1>
+
+            <!-- 
+                Subtítulo
+                text-secondary: Texto azul claro
+            -->
+            <p class="text-secondary">Ingeniero Informático en formación</p>
+            <p>Dentro de mis pasiones están el deporte, los videojuegos y la programación. Me enfrento a nuevos desafíos
+                con entusiasmo, buscando siempre una oportunidad para aprender.</p>
+
+            <!--
+                Título de la sección "Conocimientos"
+                id="Conocimientos": Identificador de la sección 
+            -->
+            <h2 id="Conocimientos">Conocimientos</h2>
+
+
+            <!--
+                Etiquetas de conocimientos
+                badge: Etiqueta de información
+                p-2: Padding de 2
+                rounded-pill: Bordes redondeados
+                bg-info: Fondo azul
+                bg-warning: Fondo amarillo
+                bg-primary: Fondo azul
+                bg-danger: Fondo rojo
+            -->
+            <span class="badge p-2 rounded-pill bg-primary">Inglés B1</span>
+            <span class="badge p-2 rounded-pill bg-primary">JavaScript</span>
+            <span class="badge p-2 rounded-pill bg-primary">SQL</span>
+            <span class="badge p-2 rounded-pill bg-primary">HTML</span>
+        </div>
+    </div>
+
+    <!-- 
+        Realizar diseño responsivo para las siguientes secciones:
+        md, lg, xl 
+    -->
+    <div id="Proyectos" class="row mt-4">
+        <div class="col-12 text-center" style="margin-bottom: 20px;">
+            <h2>Proyectos</h2>
+        </div>
+        <div class="titulo col-md-4 mb-4 b-solid">
+            <h3>InmoConnect</h3>
+            <p>Aplicación web para la gestión de inmuebles</p>
+            <p>Tecnologías:
+                <span class="badge bg-primary rounded-pill">Angular</span>
+                <span class="badge bg-primary rounded-pill">NodeJs</span>
+                <span class="badge bg-primary rounded-pill">MongoDB</span>
+            </p>
+        </div>
+        <div class="titulo col-md-4 mb-4">
+            <h3>Rendimiento jugador</h3>
+            <p>A partir de una programa con logica fuzzy obtenemos la calificacion del rendimiento de un jugador a
+                partir de sus pases, tiros y regates</p>
+
+            <p>Tecnologías:
+                <span class="badge bg-primary rounded-pill">Python</span>
+            </p>
+        </div>
+        <div class="titulo col-md-4 mb-4">
+            <h3>API REST de Películas</h3>
+            <p>Aplicación web para buscar películas utilizando una API REST</p>
+            <p>Tecnologías: HTML, CSS, JavaScript, API REST</p>
+        </div>
+
+        <div class="col-lg-12 bg-dark text-white text-center">
+            <h2>Areas de interes</h2>
+            <p class="p-3">Desarrollo web, Desarrollo de aplicaciones móviles, Desarrollo de videojuegos</p>
+            <div class="row">
+
+                <div class="col-lg-4">
+                    <h3>Inteligencia Artificial</h3>
+                </div>
+                <div class="col-lg-6">
+                    <h3>Desarrollo de videojuegos</h3>
+                </div>
+                <div class="col-lg-2">
+                    <h3>Machine Learning</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="Contacto" class="container-fluid bg-primary p-3 mt-5 text-center">
+        <h2>Contacto</h2>
+        <p>Correo: andresgiraldo05@gmail.com</p>
+        <a href="https://github.com/DeveloperXPK" class="text-white text-decoration-none" target="_blank">
+            <span class="badge p-2 rounded-pill bg-dark">GitHub/DeveloperXPK</span>
+        </a>
+    </footer>
+</body>
+
+</html>

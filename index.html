@@ -13,6 +13,10 @@
         .titulo {
             text-align: center;
         }
+
+        p {
+            text-align: justify;
+        }
     </style>
 </head>
 
@@ -32,68 +36,18 @@
         navbar-expand-lg: Barra de navegación que se expande en pantallas grandes
         navbar-light: Barra de navegación con fondo claro
     -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-primary p-2">
-            <!--
-                Título de la barra de navegación
-                href="#Me": Enlace a la sección "Me"
-            -->
-            <a class="navbar-brand" href="#Me">DeveloperXPK</a>
-
-            <!--
-                Botón para mostrar el menú en pantallas pequeñas
-                data-toggle="collapse: Indica que el botón es un controlador de un elemento colapsable
-                data-target: Indica el id del elemento que se va a colapsar
-                aria-controls: Indica el id del elemento que se va a colapsar
-                aria-expanded: Indica si el elemento está expandido o no
-                aria-label: Etiqueta para el botón
-            -->
-            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-
-                <!--
-                    Icono del botón
-                    span: Elemento en línea
-                    navbar-toggler-icon: Icono del botón
-                -->
-                <span class="navbar-toggler-icon"></span>
-
-            </button>
-
-            <!--
-                Elementos del menú
-                ml-auto: Margen a la izquierda automático
-                id="navbarNav": Id del elemento que se va a colapsar
-            -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-
-                <!--
-                    Elementos de la barra de navegación
-                    navbar-nav: Elementos de la barra de navegación
-                    ml-auto: Margen a la izquierda automático
-
-                    Tenemos 4 elementos: Inicio, Proyectos, Conocimientos y Contacto
-                    nav-item: Elemento de la barra de navegación
-                    nav-link: Enlace de la barra de navegación
-                    text-white: Texto blanco
-                -->
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#Proyectos">Proyectos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#Conocimientos">Conocimientos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#Contacto">Contacto</a>
-                    </li>
-                </ul>
-
-            </div>
-        </nav>
+    <header class="bg-primary">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a href="#" class="nav-link text-white">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-white">Proyectos</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-white">Contacto</a>
+            </li>
+        </ul>
     </header>
 
     <!-- 
@@ -142,8 +96,10 @@
                 text-secondary: Texto azul claro
             -->
             <p class="text-secondary">Ingeniero Informático en formación</p>
-            <p>Dentro de mis pasiones están el deporte, los videojuegos y la programación. Me enfrento a nuevos desafíos
-                con entusiasmo, buscando siempre una oportunidad para aprender.</p>
+            <p>
+                Dentro de mis pasiones están el deporte, los videojuegos y la programación. Me enfrento a nuevos desafíos
+                con entusiasmo, buscando siempre una oportunidad para aprender.
+            </p>
 
             <!--
                 Título de la sección "Conocimientos"
@@ -174,31 +130,45 @@
         md, lg, xl 
     -->
     <div id="Proyectos" class="row mt-4">
-        <div class="col-12 text-center" style="margin-bottom: 20px;">
-            <h2>Proyectos</h2>
+        <div class="col-12" style="margin-bottom: 20px;">
+            <h2 class="titulo">Proyectos</h2>
         </div>
         <div class="titulo col-md-4 mb-4 b-solid">
             <h3>InmoConnect</h3>
-            <p>Aplicación web para la gestión de inmuebles</p>
-            <p>Tecnologías:
-                <span class="badge bg-primary rounded-pill">Angular</span>
-                <span class="badge bg-primary rounded-pill">NodeJs</span>
-                <span class="badge bg-primary rounded-pill">MongoDB</span>
+            <p style="text-align: justify;">
+                Esta aplicación web permite a los usuarios gestionar inmuebles de manera eficiente, facilitando la
+                compra y venta de terrenos, casas y más. Los usuarios pueden crear su perfil y realizar múltiples
+                publicaciones, ofreciendo una plataforma completa para el mercado inmobiliario.
             </p>
+
+            <img src="img/InmoConnect.png" alt="Pagina principal de InmoConnect" class="img-fluid">
+
+            <h4>Tecnologías</h4>
+            <span class="badge bg-primary rounded-pill">Angular</span>
+            <span class="badge bg-primary rounded-pill">NodeJs</span>
+            <span class="badge bg-primary rounded-pill">MongoDB</span>
         </div>
+
         <div class="titulo col-md-4 mb-4">
             <h3>Rendimiento jugador</h3>
-            <p>A partir de una programa con logica fuzzy obtenemos la calificacion del rendimiento de un jugador a
-                partir de sus pases, tiros y regates</p>
-
-            <p>Tecnologías:
-                <span class="badge bg-primary rounded-pill">Python</span>
+            <p style="text-align: justify;">
+                El proyecto evalúa el rendimiento de un jugador de fútbol utilizando lógica difusa, analizando sus
+                pases,
+                tiros y regates para obtener una calificación precisa.
             </p>
+
+            <h4>Tecnologías</h4>
+            <span class="badge bg-primary rounded-pill">Python</span>
+
         </div>
         <div class="titulo col-md-4 mb-4">
             <h3>API REST de Películas</h3>
             <p>Aplicación web para buscar películas utilizando una API REST</p>
-            <p>Tecnologías: HTML, CSS, JavaScript, API REST</p>
+            <h4>Tecnologías</h4>
+            <span class="badge bg-primary rounded-pill">HTML</span>
+            <span class="badge bg-primary rounded-pill">JavaScript</span>
+            <span class="badge bg-primary rounded-pill">NodeJs</span>
+
         </div>
 
         <div class="col-lg-12 bg-dark text-white text-center">

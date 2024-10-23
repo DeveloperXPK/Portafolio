@@ -17,6 +17,12 @@
         p {
             text-align: justify;
         }
+
+        body{
+            display: grid;
+            min-height: 100dvh;
+            grid-template-rows: auto 1fr auto;
+        }
     </style>
 </head>
 
@@ -133,8 +139,10 @@
         <div class="col-12" style="margin-bottom: 20px;">
             <h2 class="titulo">Proyectos</h2>
         </div>
-        <div class="titulo col-md-4 mb-4 b-solid">
-            <h3>InmoConnect</h3>
+        <div class="titulo col-md-4 mb-4 b-solid bg-secondary p-5">
+            <div class="p-8">
+                <h3>InmoConnect</h3>
+            </div>
             <p style="text-align: justify;">
                 Esta aplicación web permite a los usuarios gestionar inmuebles de manera eficiente, facilitando la
                 compra y venta de terrenos, casas y más. Los usuarios pueden crear su perfil y realizar múltiples
@@ -149,21 +157,29 @@
             <span class="badge bg-primary rounded-pill">MongoDB</span>
         </div>
 
-        <div class="titulo col-md-4 mb-4">
-            <h3>Rendimiento jugador</h3>
+        <div class="titulo col-md-4 mb-4 p-5 border-top border-bottom border-primary border-5">
+            <div class="p-8">
+                <h3>Rendimiento jugador</h3>
+            </div>
             <p style="text-align: justify;">
                 El proyecto evalúa el rendimiento de un jugador de fútbol utilizando lógica difusa, analizando sus
                 pases,
                 tiros y regates para obtener una calificación precisa.
             </p>
 
+            <img src="img/Rendimiento.png" alt="Pagina principal de InmoConnect" class="img-fluid">
+
             <h4>Tecnologías</h4>
             <span class="badge bg-primary rounded-pill">Python</span>
 
         </div>
-        <div class="titulo col-md-4 mb-4">
+        <div class="titulo col-md-4 mb-4 bg-secondary p-5">
             <h3>API REST de Películas</h3>
             <p>Aplicación web para buscar películas utilizando una API REST</p>
+
+            <img src="img/ApiRest.png" alt="Pagina principal de InmoConnect" class="img-fluid">
+
+
             <h4>Tecnologías</h4>
             <span class="badge bg-primary rounded-pill">HTML</span>
             <span class="badge bg-primary rounded-pill">JavaScript</span>
@@ -176,13 +192,13 @@
             <p class="p-3">Desarrollo web, Desarrollo de aplicaciones móviles, Desarrollo de videojuegos</p>
             <div class="row">
 
-                <div class="col-lg-4">
+                <div class="col-lg">
                     <h3>Inteligencia Artificial</h3>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg">
                     <h3>Desarrollo de videojuegos</h3>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg">
                     <h3>Machine Learning</h3>
                 </div>
             </div>

@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <title>Mi Portafolio - DeveloperXPK</title>
 
@@ -27,18 +26,20 @@
     asi logramos que el contenido se ajuste al tamaño de la pantalla.
     bg-dark: Fondo oscuro
     text-white: Texto blanco
+
+    a. Información personal
+    b. Estudios realizados
+    c. Proyectos en los que ha participado o experiencia laboral si aplica
+    d. Lenguajes de programación que domina
+    e. Áreas de interés profesional
+
+    Realizar diseño responsivo para las siguientes secciones:
+    md, lg, xl 
 -->
 
 <body class="container bg-dark text-white">
 
-    <!-- 
-        La barra de navegación se mantiene fija en la parte superior de la pantalla.
-        bg-primary: Fondo azul
-        p-2: Padding de 2
-        navbar-expand-lg: Barra de navegación que se expande en pantallas grandes
-        navbar-light: Barra de navegación con fondo claro
-    -->
-    <header class="bg-primary">
+    <header class="row bg-primary p-3">
         <ul class="nav justify-content-center">
             <li class="nav-item">
                 <a href="#" class="nav-link text-white">Inicio</a>
@@ -60,67 +61,21 @@
     -->
     <div class="row">
 
-        <!-- 
-            col-lg-6: para crear una columna de 6 espacios en pantallas grandes
-            p-3: para agregar un padding de 3
-            text-center: para centrar el contenido
-        -->
-
-        <div class="col-xl-6 p-3 text-center">
-
-            <!-- 
-                Imagen de perfil
-                img-fluid: Imagen que se ajusta al tamaño del contenedor
-                rounded: Bordes redondeados
-
-                Para centrar la imagen:
-                mx-auto: Margen automático a los lados
-                d-block: Elemento en bloque
-            -->
+        <div class="col-lg-6 col-xl-6 p-3 text-center">
             <img src="img/profile.jpg" alt="Imagen de Andrés Giraldo, Developer" class="img-fluid rounded" width="300"
                 style="margin: 20px 0;">
         </div>
 
-        <!-- 
-            col-lg-6: para crear una columna de 6 espacios en pantallas grandes
-            p-5: para agregar un padding de 5
-        -->
-        <div class="col-xl-6 p-5">
 
-            <!-- 
-                Título principal
-                text-primary: Texto de color azul
-            -->
+        <div class="col-lg-6 col-xl-6 p-5">
             <h1 class="text-primary">Andrés Giraldo </h1>
-
-            <!-- 
-                Subtítulo
-                text-secondary: Texto azul claro
-            -->
             <p class="text-secondary">Ingeniero Informático en formación</p>
             <p>
                 Dentro de mis pasiones están el deporte, los videojuegos y la programación. Me enfrento a nuevos
-                desafíos
-                con entusiasmo, buscando siempre una oportunidad para aprender.
+                desafíos con entusiasmo, buscando siempre una oportunidad para aprender.
             </p>
 
-            <!--
-                Título de la sección "Conocimientos"
-                id="Conocimientos": Identificador de la sección 
-            -->
             <h2 id="Conocimientos">Conocimientos</h2>
-
-
-            <!--
-                Etiquetas de conocimientos
-                badge: Etiqueta de información
-                p-2: Padding de 2
-                rounded-pill: Bordes redondeados
-                bg-info: Fondo azul
-                bg-warning: Fondo amarillo
-                bg-primary: Fondo azul
-                bg-danger: Fondo rojo
-            -->
             <span class="badge p-2 rounded-pill bg-primary">Inglés B1</span>
             <span class="badge p-2 rounded-pill bg-primary">JavaScript</span>
             <span class="badge p-2 rounded-pill bg-primary">SQL</span>
@@ -128,123 +83,140 @@
         </div>
     </div>
 
-    <!-- 
-        Realizar diseño responsivo para las siguientes secciones:
-        md, lg, xl 
-    -->
-    <div id="Proyectos" class="row">
-        <h2 class="titulo text-center">Proyectos</h2>
-        <div class="titulo col-xl-4 mb-2 b-solid p-5">
+    <div id="Proyectos" class="row text-white">
+
+        <!-- INMOCONNECT -->
+        <div class="col-lg col-xl-4 mb-4 d-flex flex-column p-3">
             <h3 class="text-center">InmoConnect</h3>
-            <div class="my-2 p-1">
+
+            <a href="https://github.com/DeveloperXPK/learning-angular" target="_blank">
+                <img src="img/inmoconnect1.jpeg" alt="Pagina principal de InmoConnect" class="img-fluid my-3 rounded">
+            </a>
+
+
+            <div class="my-3 p-2 flex-grow-1">
                 <p>
                     Esta aplicación web permite a los usuarios gestionar inmuebles de manera eficiente, facilitando la
-                    compra y venta de terrenos, casas y más, ofreciendo una plataforma completa para el mercado
-                    inmobiliario.
+                    compra
+                    y venta de terrenos, casas y más, ofreciendo una plataforma completa para el mercado inmobiliario.
                 </p>
             </div>
-
-            <img src="img/InmoConnect.png" alt="Pagina principal de InmoConnect" class="img-fluid">
-
-            <h4>Tecnologías</h4>
-            <span class="badge bg-primary rounded-pill">Angular</span>
-            <span class="badge bg-primary rounded-pill">NodeJs</span>
-            <span class="badge bg-primary rounded-pill">MongoDB</span>
+            
+            <div class="text-center mt-auto">
+                <h4>Tecnologías</h4>
+                <span class="badge bg-primary rounded-pill">ANGULAR</span>
+                <span class="badge bg-primary rounded-pill">NODEJS</span>
+                <span class="badge bg-primary rounded-pill">MONGODB</span>
+            </div>
         </div>
 
-        <div class="titulo col-xl-4 mb-4 p-5">
-            <h3 class="text-center">Rendimiento jugador</h3>
-            <div class="my-4 p-1">
+        <!-- RENDIMIENTO JUGADOR -->
+        <div class="col-lg col-xl-4 mb-4 d-flex flex-column p-3">
+            <h3 class="text-center">Chat</h3>
+            <a href="https://github.com/DeveloperXPK/WebSocket" target="_blank">
+                <img src="img/WebSockets.png" alt="Rendimiento de jugador" class="img-fluid my-3 rounded">
+            </a>
+
+            <div class="my-3 p-2 flex-grow-1">
                 <p>
-                    El proyecto evalúa el rendimiento de un jugador de fútbol utilizando lógica difusa, analizando sus
-                    pases,
-                    tiros y regates para obtener una calificación precisa.
+                    Aplicación web que permite a los usuarios chatear en tiempo real. Por medio de WebSockets, los
+                    usuarios pueden enviar mensajes y recibirlos al instante.
+                </p>
+            </div>
+            <div class="text-center mt-auto">
+                <h4>Tecnologías</h4>
+                <span class="badge bg-primary rounded-pill">HTML</span>
+                <span class="badge bg-primary rounded-pill">CSS</span>
+                <span class="badge bg-primary rounded-pill">NODEJS</span>
+            </div>
+        </div>
+
+        <div class="col-lg col-xl-4 mb-4 d-flex flex-column p-3">
+            <h3 class="text-center">Reseñas Películas</h3>
+            <a href="https://github.com/DeveloperXPK/deploy-rest-api" target="_blank">
+                <img src="img/Peliculas.png" alt="Página de Películas" class="img-fluid my-3 rounded">
+            </a>
+
+            <div class="my-3 p-2 flex-grow-1">
+                <p>
+                    ¿Quieres conocer las reseñas de las películas más populares? Esta aplicación web te permite buscar
+                    películas y ver sus reseñas, además de poder agregar tus propias reseñas.
                 </p>
             </div>
 
-
-            <img src="img/Rendimiento.png" alt="Pagina principal de InmoConnect" class="img-fluid">
-
-            <h4>Tecnologías</h4>
-            <span class="badge bg-primary rounded-pill">Python</span>
-
-        </div>
-        <div class="titulo col-xl-4 mb-4 p-5">
-            <h3 class="text-center">Pagina de Películas</h3>
-            <div class="my-4 p-1">
-                <p>Aplicación web para listar pelicas con sus caracteristicas, permite a los usuario conocer una serie
-                    de
-                    peliculas y tambien cuentan con la posibilidad de eliminarla de la lista</p>
-
+            <div class="text-center mt-auto">
+                <h4>Tecnologías</h4>
+                <span class="badge bg-primary rounded-pill">HTML</span>
+                <span class="badge bg-primary rounded-pill">JAVASCRIPT</span>
+                <span class="badge bg-primary rounded-pill">NODEJS</span>
             </div>
-            <img src="img/ApiRest.png" alt="Pagina principal de InmoConnect" class="img-fluid">
-
-
-            <h4>Tecnologías</h4>
-            <span class="badge bg-primary rounded-pill">HTML</span>
-            <span class="badge bg-primary rounded-pill">JavaScript</span>
-            <span class="badge bg-primary rounded-pill">NodeJs</span>
-
-        </div>
-
-        <div class="col-xl-12 bg-dark text-white text-center">
-            <h2>Areas de interes</h2>
-            <p class="p-3">Desarrollo web, Desarrollo de aplicaciones móviles, Desarrollo de videojuegos</p>
-
-
-            <div class="row">
-                <div class="col-xl">
-                    <h3>Inteligencia Artificial</h3>
-                </div>
-                <div class="col-xl">
-                    <h3>Desarrollo de videojuegos</h3>
-                </div>
-                <div class="col-xl">
-                    <h3>Machine Learning</h3>
-                    <!-- Carousel -->
-                    <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-                        <!-- Indicators/dots -->
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-                        </div>
-
-                        <!-- The slideshow/carousel -->
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="img/InmoConnect.png" alt="InmoConnect" class="d-block w-100">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/ApiRest.png" alt="ApiRest listador de pelicas" class="d-block w-100">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/Rendimiento.png" alt="Aplicaciónde logica fuzzy" class="d-block w-100">
-                            </div>
-                        </div>
-
-                        <!-- Left and right controls/icons -->
-                        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-
         </div>
     </div>
 
-    <footer id="Contacto" class="container-fluid bg-primary p-3 mt-5 text-center">
-        <h2>Contacto</h2>
-        <p>Correo: andresgiraldo05@gmail.com</p>
-        <a href="https://github.com/DeveloperXPK" class="text-white text-decoration-none" target="_blank">
-            <span class="badge p-2 rounded-pill bg-dark">GitHub/DeveloperXPK</span>
-        </a>
+
+    <div class="row text-white text-center p-3">
+        <div class="col-md-12 col-lg-6 col-xl-4">
+            <h2>Areas de interes</h2>
+            <p class="p-3">
+                Desde pequeño, he amado los videojuegos, tanto jugarlos como verlos. Al adentrarme en la programación,
+                descubrí muchas áreas fascinantes, especialmente el desarrollo de videojuegos, ya que combina mis dos
+                pasiones. Con el auge de la inteligencia artificial y el machine learning en los últimos años, quiero
+                aprender más sobre estas áreas para aplicarlas en la creación de videojuegos y software.
+            </p>
+        </div>
+
+        <div class="col d-flex flex-column">
+            <div>
+                <h3>Inteligencia Artificial</h3>
+            </div>
+
+            <div>
+                <h3>Desarrollo de videojuegos</h3>
+            </div>
+
+            <div>
+                <h3>Machine Learning</h3>
+            </div>
+        </div>
+    </div>
+
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/InmoConnect.png" alt="InmoConnect" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="img/ApiRest.png" alt="ApiRest listador de pelicas" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="img/Rendimiento.png" alt="Aplicaciónde logica fuzzy" class="d-block w-100">
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <footer class="footer py-3">
+        <div class="container">
+            <p class="small mb-0 text-light">
+                &copy; 2024 By <a href="https://github.com/DeveloperXPK" target="_blank"
+                    class=" text-decoration-none"><span class="text-primary">DeveloperXPK</span></a>
+            </p>
+        </div>
     </footer>
 </body>
 

@@ -39,8 +39,9 @@
 
 <body class="container bg-dark text-white">
 
-    <header class="row bg-primary p-3">
-        <ul class="nav justify-content-center">
+    <header class="row bg-primary">
+        <h1 class="text-center">Portafolio</h1>
+        <!-- <ul class="nav justify-content-center">
             <li class="nav-item">
                 <a href="#" class="nav-link text-white">Inicio</a>
             </li>
@@ -50,15 +51,10 @@
             <li class="nav-item">
                 <a href="#" class="nav-link text-white">Contacto</a>
             </li>
-        </ul>
+        </ul> -->
     </header>
 
-    <!-- 
-        Clase "row" para crear una fila
-        Dentro de la fila, tenemos dos columnas:
-        - Imagen de perfil
-        - Información personal
-    -->
+    
     <div class="row">
 
         <div class="col-lg-6 col-xl-6 p-3 text-center">
@@ -75,146 +71,173 @@
                 desafíos con entusiasmo, buscando siempre una oportunidad para aprender.
             </p>
 
-            <h2 id="Conocimientos">Conocimientos</h2>
-            <span class="badge p-2 rounded-pill bg-primary">Inglés B1</span>
-            <span class="badge p-2 rounded-pill bg-primary">JavaScript</span>
-            <span class="badge p-2 rounded-pill bg-primary">SQL</span>
-            <span class="badge p-2 rounded-pill bg-primary">HTML</span>
+            <div class="row">
+                <div class="col-md-6 col-lg-6 col-xl-8">
+                    <h2 id="Conocimientos">Conocimientos</h2>
+                    <span class="badge p-2 mb-1 rounded-pill bg-primary">Inglés B1</span>
+                    <span class="badge p-2 mb-1 bg-primary rounded-pill">HTML</span>
+                    <span class="badge p-2 mb-1 bg-primary rounded-pill">CSS</span>
+                    <span class="badge p-2 mb-1 bg-primary rounded-pill">JAVASCRIPT</span>
+                    <span class="badge p-2 mb-1 bg-primary rounded-pill">SQL</span>
+                    <span class="badge p-2 mb-1 bg-primary rounded-pill">NODEJS</span>
+                    <span class="badge p-2 mb-1 bg-primary rounded-pill">ANGULAR</span>
+                    <span class="badge p-2 mb-1 bg-primary rounded-pill">MONGODB</span>
+                </div>
+            </div>
+
         </div>
     </div>
-
-    <div id="Proyectos" class="row text-white">
-
-        <!-- INMOCONNECT -->
-        <div class="col-lg col-xl-4 mb-4 d-flex flex-column p-3">
-            <h3 class="text-center">InmoConnect</h3>
-
-            <a href="https://github.com/DeveloperXPK/learning-angular" target="_blank">
-                <img src="img/inmoconnect1.jpeg" alt="Pagina principal de InmoConnect" class="img-fluid my-3 rounded">
-            </a>
-
-
-            <div class="my-3 p-2 flex-grow-1">
-                <p>
-                    Esta aplicación web permite a los usuarios gestionar inmuebles de manera eficiente, facilitando la
-                    compra
-                    y venta de terrenos, casas y más, ofreciendo una plataforma completa para el mercado inmobiliario.
-                </p>
-            </div>
-            
-            <div class="text-center mt-auto">
-                <h4>Tecnologías</h4>
-                <span class="badge bg-primary rounded-pill">ANGULAR</span>
-                <span class="badge bg-primary rounded-pill">NODEJS</span>
-                <span class="badge bg-primary rounded-pill">MONGODB</span>
-            </div>
-        </div>
-
-        <!-- RENDIMIENTO JUGADOR -->
-        <div class="col-lg col-xl-4 mb-4 d-flex flex-column p-3">
-            <h3 class="text-center">Chat</h3>
-            <a href="https://github.com/DeveloperXPK/WebSocket" target="_blank">
-                <img src="img/WebSockets.png" alt="Rendimiento de jugador" class="img-fluid my-3 rounded">
-            </a>
-
-            <div class="my-3 p-2 flex-grow-1">
-                <p>
-                    Aplicación web que permite a los usuarios chatear en tiempo real. Por medio de WebSockets, los
-                    usuarios pueden enviar mensajes y recibirlos al instante.
-                </p>
-            </div>
-            <div class="text-center mt-auto">
-                <h4>Tecnologías</h4>
-                <span class="badge bg-primary rounded-pill">HTML</span>
-                <span class="badge bg-primary rounded-pill">CSS</span>
-                <span class="badge bg-primary rounded-pill">NODEJS</span>
-            </div>
-        </div>
-
-        <div class="col-lg col-xl-4 mb-4 d-flex flex-column p-3">
-            <h3 class="text-center">Reseñas Películas</h3>
-            <a href="https://github.com/DeveloperXPK/deploy-rest-api" target="_blank">
-                <img src="img/Peliculas.png" alt="Página de Películas" class="img-fluid my-3 rounded">
-            </a>
-
-            <div class="my-3 p-2 flex-grow-1">
-                <p>
-                    ¿Quieres conocer las reseñas de las películas más populares? Esta aplicación web te permite buscar
-                    películas y ver sus reseñas, además de poder agregar tus propias reseñas.
-                </p>
-            </div>
-
-            <div class="text-center mt-auto">
-                <h4>Tecnologías</h4>
-                <span class="badge bg-primary rounded-pill">HTML</span>
-                <span class="badge bg-primary rounded-pill">JAVASCRIPT</span>
-                <span class="badge bg-primary rounded-pill">NODEJS</span>
-            </div>
+    <div class="row text-white text-center p-3 bg-primary mb-4">
+        <div>
+            <h2>Acerca de mi</h2>
         </div>
     </div>
+    <div class="row text-white">
 
-
-    <div class="row text-white text-center p-3">
-        <div class="col-md-12 col-lg-6 col-xl-4">
-            <h2>Areas de interes</h2>
+        <div class="col-lg col-xl-4 mb-4 d-flex flex-column p-3">
+            <h2 class="text-center">Estudios</h2>
             <p class="p-3">
-                Desde pequeño, he amado los videojuegos, tanto jugarlos como verlos. Al adentrarme en la programación,
-                descubrí muchas áreas fascinantes, especialmente el desarrollo de videojuegos, ya que combina mis dos
-                pasiones. Con el auge de la inteligencia artificial y el machine learning en los últimos años, quiero
-                aprender más sobre estas áreas para aplicarlas en la creación de videojuegos y software.
+                Actualmente, me encuentro en el quinto semestre de la carrera de Ingeniería Informática. Durante mi
+                formación, he aprendido sobre programación, bases de datos, inteligencia artificial y más.
+                Además, he realizado cursos en línea sobre desarrollo web y videojuegos, y he participado en proyectos
+                académicos y personales.
             </p>
         </div>
 
-        <div class="col d-flex flex-column">
-            <div>
-                <h3>Inteligencia Artificial</h3>
-            </div>
+        <div class="col-lg col-xl-4 mb-4 d-flex flex-column p-3">
+            <h2 class="text-center">Experiencia Laboral</h2>
+            <p class="p-3">
+                He trabajado como desarrollador web en proyectos personales y académicos, utilizando tecnologías como
+                <span class="text-warning">Angular</span> , <span class="text-warning">NodeJS</span> , <span
+                    class="text-warning">MongoDB</span> , <span class="text-warning">HTML</span> ,
+                <span class="text-warning">CSS</span> y más. Además, he realizado prácticas profesionales en empresas de
+                desarrollo de software, donde he aprendido sobre el desarrollo de
+                aplicaciones web y móviles.
+            </p>
+        </div>
 
-            <div>
-                <h3>Desarrollo de videojuegos</h3>
-            </div>
-
-            <div>
-                <h3>Machine Learning</h3>
-            </div>
+        <div class="col-lg col-xl-4 mb-4 d-flex flex-column p-3">
+            <h2 class="text-center">Áreas de Interés</h2>
+            <p class="p-3">
+                Me interesa el desarrollo de aplicaciones web y móviles, la inteligencia artificial, la ciberseguridad y
+                el desarrollo de videojuegos. Me gustaría trabajar en proyectos que me permitan aprender y crecer
+                profesionalmente, y que me permitan aportar soluciones innovadoras a los problemas actuales.
+            </p>
         </div>
     </div>
 
-    <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-        <!-- Indicators/dots -->
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    <div class="row text-white text-center p-3 bg-primary">
+        <div>
+            <h2>Proyectos</h2>
+            <!-- <p >
+                A continuación, se presentan algunos de los proyectos en los que he participado. Para más información,
+                puedes visitar mi perfil de GitHub.
+            </p> -->
         </div>
-
-        <!-- The slideshow/carousel -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/InmoConnect.png" alt="InmoConnect" class="d-block w-100">
-            </div>
-            <div class="carousel-item">
-                <img src="img/ApiRest.png" alt="ApiRest listador de pelicas" class="d-block w-100">
-            </div>
-            <div class="carousel-item">
-                <img src="img/Rendimiento.png" alt="Aplicaciónde logica fuzzy" class="d-block w-100">
-            </div>
-        </div>
-
-        <!-- Left and right controls/icons -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </button>
     </div>
-    <footer class="footer py-3">
+
+    <div class="row text-white text-center p-3">
+        <div class="col-xl-2"></div>
+        <div class="col-xl-8 text-center">
+
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active p-5">
+                        <h3 class="text-center">Reseñas Películas</h3>
+                        <a href="https://github.com/DeveloperXPK/deploy-rest-api" target="_blank">
+                            <img src="img/Peliculas.png" alt="Página de Películas" class="img-fluid my-3 rounded" style="width: 600px;">
+                        </a>
+
+                        <div class="my-3 p-2 flex-grow-1">
+                            <p>
+                                ¿Quieres conocer las reseñas de las películas más populares? Esta aplicación web te
+                                permite buscar
+                                películas y ver sus reseñas, además de poder agregar tus propias reseñas.
+                            </p>
+                        </div>
+
+                        <div class="text-center mt-auto">
+                            <h4>Tecnologías</h4>
+                            <span class="badge bg-primary rounded-pill">HTML</span>
+                            <span class="badge bg-primary rounded-pill">JAVASCRIPT</span>
+                            <span class="badge bg-primary rounded-pill">NODEJS</span>
+                        </div>
+                    </div>
+                    <div class="carousel-item p-5">
+                        <h3 class="text-center">Chat</h3>
+                        <a href="https://github.com/DeveloperXPK/WebSocket" target="_blank">
+                            <img src="img/WebSockets.png" alt="Rendimiento de jugador" class="img-fluid my-3 rounded" style="width: 600px;">
+                        </a>
+
+                        <div class="my-3 p-2 flex-grow-1">
+                            <p>
+                                Aplicación web que permite a los usuarios chatear en tiempo real. Por medio de
+                                WebSockets, los
+                                usuarios pueden enviar mensajes y recibirlos al instante.
+                            </p>
+                        </div>
+                        <div class="text-center mt-auto">
+                            <h4>Tecnologías</h4>
+                            <span class="badge bg-primary rounded-pill">HTML</span>
+                            <span class="badge bg-primary rounded-pill">CSS</span>
+                            <span class="badge bg-primary rounded-pill">NODEJS</span>
+                        </div>
+                    </div>
+                    <div class="carousel-item p-5">
+                        <h3 class="text-center">InmoConnect</h3>
+
+                        <a href="https://github.com/DeveloperXPK/learning-angular" target="_blank">
+                            <img src="img/inmoconnect1.jpeg" alt="Pagina principal de InmoConnect"
+                                class="img-fluid my-3 rounded" style="width: 600px;">
+                        </a>
+
+
+                        <div class="my-3 p-2 flex-grow-1">
+                            <p>
+                                Esta aplicación web permite a los usuarios gestionar inmuebles de manera eficiente,
+                                facilitando la compra y venta de terrenos, casas y más, ofreciendo una plataforma
+                                completa para el mercado inmobiliario.
+                            </p>
+                        </div>
+
+                        <div class="text-center mt-auto">
+                            <h4>Tecnologías</h4>
+                            <span class="badge bg-primary rounded-pill">ANGULAR</span>
+                            <span class="badge bg-primary rounded-pill">NODEJS</span>
+                            <span class="badge bg-primary rounded-pill">MONGODB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+
+
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="col-xl-2"></div>
+
+    </div>
+
+    <footer class="row footer py-3 bg-primary">
         <div class="container">
             <p class="small mb-0 text-light">
                 &copy; 2024 By <a href="https://github.com/DeveloperXPK" target="_blank"
-                    class=" text-decoration-none"><span class="text-primary">DeveloperXPK</span></a>
+                    class=" text-decoration-none"><span class="text-warning">DeveloperXPK</span></a>
             </p>
         </div>
     </footer>
